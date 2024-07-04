@@ -1,0 +1,119 @@
+.task-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0px 10px;
+}
+
+.task-status-input {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.layer-1 {
+    background-color: #004d99;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.task-content-container {
+    background-color: #e6f7ff;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 0px 5px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.task-text {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.task-completed {
+    margin: 0px;
+    font-family: sans-serif;
+    text-decoration: line-through;
+}
+
+.task-controls-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-icon {
+    background-color: transparent;
+    border-width: 0px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0px 5px 0px;
+}
+
+.popup-content-container {
+    width: 96%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 10px 10px 20px 10px;
+}
+
+.popup-close-btn {
+    background-color: transparent;
+    border-width: 0px;
+    cursor: pointer;
+    font-size: 25px;
+    align-self: flex-end;
+}
+
+.popup-heading {
+    margin: 10px 0px 10px;
+    font-family: sans-serif;
+}
+
+.popup-input-styles {
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-radius: 10px;
+}
+
+.update-btn {
+    background-color: #004d99;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 22px 8px;
+    border-width: 0px;
+    border-radius: 5px;
+    margin: 25px 0px 15px 0px;
+    cursor: pointer;
+    box-shadow: rgb(170, 170, 170) 0px 1px 15px 1px;
+    align-self: flex-end;
+}
+
+.update-btn:hover {
+    scale: 1.1;
+    transition: ease 0.5;
+    box-shadow: rgb(123, 123, 211) 0px 1px 15px 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .task-item {
+        width: 95%;
+    }
+}
